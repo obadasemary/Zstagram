@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */; };
 		AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1142A70034D0090E868 /* ZstagramApp.swift */; };
 		AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1162A70034D0090E868 /* ContentView.swift */; };
 		AFFFF1192A70034F0090E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF1182A70034F0090E868 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		AFFFF1112A70034D0090E868 /* Zstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFF1142A70034D0090E868 /* ZstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZstagramApp.swift; sourceTree = "<group>"; };
 		AFFFF1162A70034D0090E868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		AFFFF1302A7008940090E868 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
+				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
