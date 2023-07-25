@@ -21,6 +21,7 @@ struct ProfileView: View {
             VStack {
                 // image and stats
                 HStack {
+            ScrollView {
                         HStack(spacing: 8) {
                             UserStateView(value: 3, title: "Posts")
                             UserStateView(value: 12, title: "Followers")
@@ -61,6 +62,7 @@ struct ProfileView: View {
                             RoundedRectangle(cornerRadius: 6)
                                 .stroke(.gray, lineWidth: 1)
                         )
+            }
                 }
                 
                 Divider()
