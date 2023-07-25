@@ -20,7 +20,7 @@ struct ProfileView: View {
             ScrollView {
                 VStack {
                     HStack {
-                        Image("Obada")
+                        Image("Cardial")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
@@ -70,7 +70,7 @@ struct ProfileView: View {
                 
                 LazyVGrid(columns: gridItems, spacing: 1) {
                     ForEach(0 ... 109, id: \.self) { item in
-                        Image("Obada")
+                        Image("MOEG")
                             .resizable()
                             .scaledToFill()
                     }
