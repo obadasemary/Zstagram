@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    private let gridItems: [GridItem] = [
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1),
+        .init(.flexible(), spacing: 1)
+    ]
+    
     var body: some View {
         VStack {
             // header
