@@ -20,7 +20,7 @@ struct ProfileView: View {
             ScrollView {
                 VStack {
                     HStack {
-                        Image("Cardial")
+                        Image("Obada")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
