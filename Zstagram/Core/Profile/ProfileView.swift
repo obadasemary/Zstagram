@@ -21,6 +21,7 @@ struct ProfileView: View {
             VStack {
                 // image and stats
                 HStack {
+        NavigationStack {
             ScrollView {
                         HStack(spacing: 8) {
                             UserStateView(value: 3, title: "Posts")
@@ -63,6 +64,17 @@ struct ProfileView: View {
                                 .stroke(.gray, lineWidth: 1)
                         )
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    }
+
                 }
                 
                 Divider()
