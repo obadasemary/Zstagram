@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct UserStateView: View {
+    
+    let value: Int
+    let title: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(value)")
+                .font(.subheadline)
+                .fontWeight(.semibold)
+            Text(title)
+                .font(.footnote)
+        }
+        .frame(width: 72)
     }
 }
 
 struct UserStateView_Previews: PreviewProvider {
     static var previews: some View {
-        UserStateView()
+        UserStateView(value: 20, title: "Posts")
     }
 }
