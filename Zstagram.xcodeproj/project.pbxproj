@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */; };
 		AFCDCC112A707D9400E23F0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC102A707D9400E23F0B /* ProfileView.swift */; };
+		AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC152A70856C00E23F0B /* UserStateView.swift */; };
 		AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1142A70034D0090E868 /* ZstagramApp.swift */; };
 		AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1162A70034D0090E868 /* ContentView.swift */; };
 		AFFFF1192A70034F0090E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF1182A70034F0090E868 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		AFCDCC102A707D9400E23F0B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AFCDCC152A70856C00E23F0B /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
 		AFFFF1112A70034D0090E868 /* Zstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFF1142A70034D0090E868 /* ZstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZstagramApp.swift; sourceTree = "<group>"; };
 		AFFFF1162A70034D0090E868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFCDCC122A70850E00E23F0B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AFCDCC152A70856C00E23F0B /* UserStateView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		AFFFF1082A70034D0090E868 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		AFFFF1272A7005870090E868 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AFCDCC122A70850E00E23F0B /* Components */,
 				AFFFF12E2A70081F0090E868 /* Root */,
 				AFFFF1302A7008940090E868 /* TabBar */,
 				AFFFF12B2A7008060090E868 /* Authentication */,
@@ -241,6 +252,7 @@
 			files = (
 				AFCDCC112A707D9400E23F0B /* ProfileView.swift in Sources */,
 				AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */,
+				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
 				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
 			);
