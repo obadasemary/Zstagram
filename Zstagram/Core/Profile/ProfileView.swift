@@ -29,6 +29,12 @@ struct ProfileView: View {
                     Text("iOS Developer")
                         .fontWeight(.semibold)
                     Text("Fintech")
+                LazyVGrid(columns: gridItems, spacing: 1) {
+                    ForEach(0 ... 109, id: \.self) { item in
+                        Image("Obada")
+                            .resizable()
+                            .scaledToFill()
+                    }
                 }
                 .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)
