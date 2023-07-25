@@ -18,11 +18,14 @@ struct ProfileView: View {
                 }
                 
                 // name and bio
-                VStack {
+                VStack(alignment: .leading, spacing: 4) {
                     Text("iOS Developer")
-                    
+                        .fontWeight(.semibold)
                     Text("Fintech")
                 }
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
                 
                 // action button
                 Button {
