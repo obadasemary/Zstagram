@@ -21,6 +21,11 @@ struct ProfileView: View {
             VStack {
                 // image and stats
                 HStack {
+                        HStack(spacing: 8) {
+                            UserStateView(value: 3, title: "Posts")
+                            UserStateView(value: 12, title: "Followers")
+                            UserStateView(value: 24, title: "Following")
+                        }
                     
                 }
                 
