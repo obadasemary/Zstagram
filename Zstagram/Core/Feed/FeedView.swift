@@ -11,20 +11,7 @@ struct FeedView: View {
     var body: some View {
         VStack {
             
-            HStack {
-                Image("Obada")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
-                
-                Text("Obada")
-                    .font(.footnote)
-                    .fontWeight(.semibold)
-                
-                Spacer()
-            }
-            .padding(.leading, 8)
+            UserImageView(image: "Obada", name: "Abdelrahman Mohamed")
             
             Image("sonyStudio")
                 .resizable()
@@ -68,17 +55,10 @@ struct FeedView: View {
                 .padding(.leading, 10)
                 .padding(.top, 1)
             
-            HStack {
-                Text("Obada ")
-                    .fontWeight(.semibold) +
-                Text(
-                    "HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎"
-                )
-            }
-            .font(.footnote)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 10)
-            .padding(.top, 1)
+            CaptionView(
+                name: "Abdelrahman Mohamed",
+                caption: "HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎"
+            )
             
             Text("6h ago")
                 .font(.footnote)
@@ -92,6 +72,8 @@ struct FeedView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        ScrollView {        
+            FeedView()
+        }
     }
 }
