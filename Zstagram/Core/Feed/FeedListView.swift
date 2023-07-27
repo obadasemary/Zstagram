@@ -18,6 +18,26 @@ struct FeedListView: View {
                 }
                 .padding(.top, 8)
             }
+            .navigationTitle("Feed")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Zstagram")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .fontDesign(.monospaced)
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "paperplane")
+                            .foregroundColor(.black)
+                    }
+
+                }
+            }
         }
     }
 }
