@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack {
             
             HStack {
@@ -69,6 +68,24 @@ struct FeedView: View {
                 .padding(.leading, 10)
                 .padding(.top, 1)
             
+            HStack {
+                Text("Obada ")
+                    .fontWeight(.semibold) +
+                Text(
+                    "HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎"
+                )
+            }
+            .font(.footnote)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.leading, 10)
+            .padding(.top, 1)
+            
+            Text("6h ago")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
+                .foregroundColor(.gray)
         }
     }
 }
