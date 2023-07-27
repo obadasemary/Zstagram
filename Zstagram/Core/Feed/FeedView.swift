@@ -32,6 +32,35 @@ struct FeedView: View {
                 .frame(maxHeight: .infinity)
                 .clipShape(Rectangle())
             
+            HStack(spacing: 16) {
+                
+                Button {
+                    print("Like Post")
+                } label: {
+                    Image(systemName: "heart")
+                        .imageScale(.large)
+                }
+
+                Button {
+                    print("Comment on Post")
+                } label: {
+                    Image(systemName: "bubble.right")
+                        .imageScale(.large)
+                }
+                
+                Button {
+                    print("Share Post")
+                } label: {
+                    Image(systemName: "paperplane")
+                        .imageScale(.large)
+                }
+                
+                Spacer()
+            }
+            .padding(.leading, 8)
+            .padding(.top, 4)
+            .foregroundColor(.black)
+            
         }
     }
 }
