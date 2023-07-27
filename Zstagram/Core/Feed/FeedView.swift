@@ -25,6 +25,13 @@ struct FeedView: View {
                 Spacer()
             }
             .padding(.leading, 8)
+            
+            Image("sonyStudio")
+                .resizable()
+                .scaledToFill()
+                .frame(maxHeight: .infinity)
+                .clipShape(Rectangle())
+            
         }
     }
 }
