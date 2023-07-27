@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EA2A71635E0011C875 /* FeedView.swift */; };
+		AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EC2A7163B60011C875 /* FeedListView.swift */; };
 		AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */; };
 		AFCDCC112A707D9400E23F0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC102A707D9400E23F0B /* ProfileView.swift */; };
 		AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC152A70856C00E23F0B /* UserStateView.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		AFCDCC102A707D9400E23F0B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AFCDCC152A70856C00E23F0B /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		AFFFF12C2A7008150090E868 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				AF5851EC2A7163B60011C875 /* FeedListView.swift */,
+				AF5851EA2A71635E0011C875 /* FeedView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 				AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */,
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
+				AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */,
+				AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */,
 				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
