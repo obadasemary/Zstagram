@@ -11,6 +11,7 @@ struct FeedView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack {
+            
             HStack {
                 Image("Obada")
                     .resizable()
@@ -60,6 +61,13 @@ struct FeedView: View {
             .padding(.leading, 8)
             .padding(.top, 4)
             .foregroundColor(.black)
+            
+            Text("23 likes")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
             
         }
     }
