@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D02A75250C001B00C3 /* LoginView.swift */; };
 		AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EA2A71635E0011C875 /* FeedView.swift */; };
 		AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EC2A7163B60011C875 /* FeedListView.swift */; };
 		AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF599F3B2A72D8A800CC004C /* UserImageView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF29E2D02A75250C001B00C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		AF599F3B2A72D8A800CC004C /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
@@ -111,10 +113,10 @@
 		AFFFF1272A7005870090E868 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AFFFF12B2A7008060090E868 /* Authentication */,
 				AFCDCC122A70850E00E23F0B /* Components */,
 				AFFFF12E2A70081F0090E868 /* Root */,
 				AFFFF1302A7008940090E868 /* TabBar */,
-				AFFFF12B2A7008060090E868 /* Authentication */,
 				AFFFF12C2A7008150090E868 /* Feed */,
 				AFFFF12F2A7008230090E868 /* Search */,
 				AFFFF1312A70089B0090E868 /* UploadPost */,
@@ -147,6 +149,7 @@
 		AFFFF12B2A7008060090E868 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				AF29E2D02A75250C001B00C3 /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
+				AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */,
 				AF6848B92A72DBF300C5292E /* CaptionView.swift in Sources */,
 				AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */,
 				AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */,
