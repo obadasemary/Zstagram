@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D02A75250C001B00C3 /* LoginView.swift */; };
+		AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */; };
 		AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EA2A71635E0011C875 /* FeedView.swift */; };
 		AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EC2A7163B60011C875 /* FeedListView.swift */; };
 		AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF599F3B2A72D8A800CC004C /* UserImageView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		AF29E2D02A75250C001B00C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		AF599F3B2A72D8A800CC004C /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				AF29E2D02A75250C001B00C3 /* LoginView.swift */,
+				AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */,
 				AF6848B92A72DBF300C5292E /* CaptionView.swift in Sources */,
 				AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */,
+				AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */,
 				AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */,
 				AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */,
 				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
