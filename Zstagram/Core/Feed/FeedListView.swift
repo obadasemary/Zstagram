@@ -35,7 +35,6 @@ struct FeedListView: View {
                         Image(systemName: "paperplane")
                             .foregroundColor(.black)
                     }
-
                 }
             }
         }
