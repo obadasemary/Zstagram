@@ -32,7 +32,8 @@ struct CreatePasswordView: View {
                     .padding(.top)
                 
                 NavigationLink {
-//                    CreateUsernameView()
+                    CompleteSignUpView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Next")
                         .font(.subheadline)
