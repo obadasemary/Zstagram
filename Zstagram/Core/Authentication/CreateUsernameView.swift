@@ -31,8 +31,9 @@ struct CreateUsernameView: View {
                     .modifier(IGTextFieldModifier())
                     .padding(.top)
                 
-                Button {
-                    print("Go to password now")
+                NavigationLink {
+                    CreatePasswordView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Next")
                         .font(.subheadline)
