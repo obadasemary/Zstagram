@@ -8,8 +8,54 @@
 import SwiftUI
 
 struct CreateUsernameView: View {
+    
+    @State private var username: String = ""
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(spacing: 12) {
+                Text("Create username")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.top)
+                
+                Text("Pick a username for your new account. Yoc can always change it later.")
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+                
+                TextField("Username", text: $username)
+                    .autocorrectionDisabled()
+                    .modifier(IGTextFieldModifier())
+                    .padding(.top)
+                
+                Button {
+                    print("Go to password now")
+                } label: {
+                    Text("Next")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemBlue))
+                        .cornerRadius(8)
+                }
+                .padding(.vertical)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+        }
     }
 }
 
