@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1DA2162A785B310025CED8 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1DA2152A785B310025CED8 /* CompleteSignUpView.swift */; };
 		AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D02A75250C001B00C3 /* LoginView.swift */; };
 		AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */; };
 		AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EA2A71635E0011C875 /* FeedView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1DA2152A785B310025CED8 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		AF29E2D02A75250C001B00C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */,
 				AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */,
 				AF61DE132A78584800ABA2E4 /* CreatePasswordView.swift */,
+				AF1DA2152A785B310025CED8 /* CompleteSignUpView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */,
 				AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */,
 				AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */,
+				AF1DA2162A785B310025CED8 /* CompleteSignUpView.swift in Sources */,
 				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
