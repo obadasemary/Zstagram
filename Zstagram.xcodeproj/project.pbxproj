@@ -13,6 +13,7 @@
 		AF5851ED2A7163B60011C875 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5851EC2A7163B60011C875 /* FeedListView.swift */; };
 		AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF599F3B2A72D8A800CC004C /* UserImageView.swift */; };
 		AF61DE102A7850AB00ABA2E4 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DE0F2A7850AB00ABA2E4 /* IGTextFieldModifier.swift */; };
+		AF61DE122A78550B00ABA2E4 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */; };
 		AF6848B92A72DBF300C5292E /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6848B82A72DBF300C5292E /* CaptionView.swift */; };
 		AF6848BB2A7321D700C5292E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6848BA2A7321D700C5292E /* SearchView.swift */; };
 		AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6848BC2A742EC400C5292E /* UserImageWithNameView.swift */; };
@@ -32,6 +33,7 @@
 		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		AF599F3B2A72D8A800CC004C /* UserImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageView.swift; sourceTree = "<group>"; };
 		AF61DE0F2A7850AB00ABA2E4 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
+		AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		AF6848B82A72DBF300C5292E /* CaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
 		AF6848BA2A7321D700C5292E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AF6848BC2A742EC400C5292E /* UserImageWithNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageWithNameView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				AF29E2D02A75250C001B00C3 /* LoginView.swift */,
 				AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */,
+				AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
+				AF61DE122A78550B00ABA2E4 /* CreateUsernameView.swift in Sources */,
 				AF61DE102A7850AB00ABA2E4 /* IGTextFieldModifier.swift in Sources */,
 				AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */,
 				AF6848B92A72DBF300C5292E /* CaptionView.swift in Sources */,
