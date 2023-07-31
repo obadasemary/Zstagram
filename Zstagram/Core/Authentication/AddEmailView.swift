@@ -32,7 +32,7 @@ struct AddEmailView: View {
                     .padding(.top)
                 
                 Button {
-                    print("Next")
+                    print("Go to username now")
                 } label: {
                     Text("Next")
                         .font(.subheadline)
