@@ -25,20 +25,13 @@ struct LoginView: View {
                     
                     VStack {
                         TextField("Enter your email", text: $email)
+                            .autocapitalization(.none)
                             .autocorrectionDisabled()
-                            .font(.subheadline)
-                            .padding(12)
-                            .background(Color(.systemGray6))
-                            .cornerRadius(10)
-                            .padding(.horizontal, 24)
+                            .modifier(IGTextFieldModifier())
                         
                         SecureField("Password", text: $password)
                             .autocorrectionDisabled()
-                            .font(.subheadline)
-                            .padding(12)
-                            .background(Color(.systemGray6))
-                            .cornerRadius(10)
-                            .padding(.horizontal, 24)
+                            .modifier(IGTextFieldModifier())
                     }
                     
                     Button {
