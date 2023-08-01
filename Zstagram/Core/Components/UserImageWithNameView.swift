@@ -33,6 +33,7 @@ struct UserImageWithNameView: View {
             
             Spacer()
         }
+        .foregroundColor(.black)
         .padding(.horizontal)
     }
 }
