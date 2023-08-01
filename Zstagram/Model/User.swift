@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User: Identifiable, Codable {
+struct User: Identifiable, Hashable, Codable {
     
     let id: String
     var username: String
@@ -24,7 +24,7 @@ extension User {
             username: "Obada",
             profileImageUrl: "Obada",
             fullname: "Abdelrahman Mohamed",
-            bio: "Senior iOS Developer",
+            bio: "Senior iOS Developer | FinTech | E-Commerce Mobile Solutions",
             eamil: "obada.semary@gmail.com"
         ),
         .init(
