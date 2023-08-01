@@ -29,8 +29,11 @@ struct SearchView: View {
                 .searchable(text: $searchText, prompt: "Search...")
             }
             .navigationDestination(for: User.self, destination: { user in
-                ProfileView(user: user)
-                    .navigationBarBackButtonHidden()
+                ProfileView(
+                    user: user,
+                    isFromSearchView: true
+                )
+                .navigationBarBackButtonHidden()
             })
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
