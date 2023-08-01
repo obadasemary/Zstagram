@@ -11,7 +11,7 @@ struct UserImageWithNameView: View {
     
     let image: String
     let name: String
-    let title: String
+    let fullName: String?
     
     var body: some View {
         HStack {
@@ -25,7 +25,9 @@ struct UserImageWithNameView: View {
                 Text(name)
                     .fontWeight(.semibold)
                 
-                Text(title)
+                if let userfullname = fullName {
+                    Text(userfullname)
+                }
             }
             .font(.footnote)
             
@@ -40,7 +42,7 @@ struct UserImageWithNameView_Previews: PreviewProvider {
         UserImageWithNameView(
             image: "Obada",
             name: "Obada",
-            title: "Senior iOS Developer"
+            fullName: "Abdelrahman Mohamed"
         )
     }
 }
