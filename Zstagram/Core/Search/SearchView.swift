@@ -15,11 +15,11 @@ struct SearchView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 12) {
-                    ForEach(0...15, id: \.self) { user in
+                    ForEach(User.MOCK_USERS) { user in
                         UserImageWithNameView(
-                            image: "Obada",
-                            name: "Obada",
-                            title: "Senior iOS Developer"
+                            image: user.profileImageUrl ?? "awsAI",
+                            name: user.username,
+                            fullName: user.fullname ?? nil
                         )
                     }
                 }
