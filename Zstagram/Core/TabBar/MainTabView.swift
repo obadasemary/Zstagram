@@ -26,10 +26,16 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }
-            CurrentUserProfileView()
-                .tabItem {
-                    Image(systemName: "person")
-                }
+//            CurrentUserProfileView()
+            NavigationStack {
+                ProfileView(
+                    user: User.MOCK_USERS[0],
+                    isFromSearchView: false
+                )
+            }
+            .tabItem {
+                Image(systemName: "person")
+            }
         }
         .accentColor(.black)
     }
