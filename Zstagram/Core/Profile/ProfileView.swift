@@ -40,9 +40,9 @@ struct ProfileView: View {
                     .padding(.bottom, 4)
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Senior iOS Developer")
+                        Text("Abdelrahman Mohamed")
                             .fontWeight(.semibold)
-                        Text(" FinTech | E-Commerce Mobile Solutions")
+                        Text("Senior iOS Developer | FinTech | E-Commerce Mobile Solutions")
                     }
                     .font(.footnote)
                     .frame(maxWidth: .infinity, alignment: .leading)
