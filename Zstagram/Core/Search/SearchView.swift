@@ -16,16 +16,22 @@ struct SearchView: View {
             ScrollView {
                 LazyVStack(spacing: 12) {
                     ForEach(User.MOCK_USERS) { user in
-                        UserImageWithNameView(
-                            image: user.profileImageUrl ?? "awsAI",
-                            name: user.username,
-                            fullName: user.fullname ?? nil
-                        )
+                        NavigationLink(value: user) {
+                            UserImageWithNameView(
+                                image: user.profileImageUrl ?? "awsAI",
+                                name: user.username,
+                                fullName: user.fullname ?? nil
+                            )
+                        }
                     }
                 }
                 .padding(.top, 8)
                 .searchable(text: $searchText, prompt: "Search...")
             }
+            .navigationDestination(for: User.self, destination: { user in
+                ProfileView(user: user)
+                    .navigationBarBackButtonHidden()
+            })
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
         }
