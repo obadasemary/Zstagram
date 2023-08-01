@@ -88,12 +88,14 @@ struct ProfileView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
+                if isFromSearchView {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                    }
                 }
             }
         }
