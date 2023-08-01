@@ -1,5 +1,5 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  Zstagram
 //
 //  Created by Abdelrahman Mohamed on 26.07.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct CurrentUserProfileView: View {
     
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
@@ -93,8 +93,8 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        CurrentUserProfileView()
     }
 }
