@@ -28,7 +28,7 @@ struct CaptionView: View {
 struct CaptionView_Previews: PreviewProvider {
     static var previews: some View {
         CaptionView(
-            name: "Obada",
+            name: "obada",
             caption: "What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎"
         )
     }

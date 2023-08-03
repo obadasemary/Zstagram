@@ -33,7 +33,7 @@ struct UserImageView: View {
 struct UserImageView_Previews: PreviewProvider {
     static var previews: some View {
         UserImageView(
-            image: "Obada",
+            image: "obada",
             name: "Abdelrahman Mohamed"
         )
     }

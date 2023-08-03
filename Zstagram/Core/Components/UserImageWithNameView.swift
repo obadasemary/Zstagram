@@ -41,7 +41,7 @@ struct UserImageWithNameView: View {
 struct UserImageWithNameView_Previews: PreviewProvider {
     static var previews: some View {
         UserImageWithNameView(
-            image: "Obada",
+            image: "obada",
             name: "Obada",
             fullName: "Abdelrahman Mohamed"
         )
