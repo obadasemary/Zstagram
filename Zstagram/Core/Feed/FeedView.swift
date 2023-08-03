@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct FeedView: View {
+    
+    let post: Post
+    @State var isLoading: Bool = true
+    
     var body: some View {
         VStack {
+            if let user = post.user {
+                UserImageView(
+                    image: user.profileImageUrl ?? "instagram-logo",
+                    name: user.fullname ?? user.username
+                )
+            }
             
-            UserImageView(image: "Obada", name: "Abdelrahman Mohamed")
-            
-            Image("sonyStudio")
+            Image(post.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(maxHeight: .infinity)
@@ -48,7 +56,7 @@ struct FeedView: View {
             .padding(.top, 4)
             .foregroundColor(.black)
             
-            Text("23 likes")
+            Text("\(post.likes) likes")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -56,16 +64,22 @@ struct FeedView: View {
                 .padding(.top, 1)
             
             CaptionView(
-                name: "Abdelrahman Mohamed",
-                caption: "HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎"
+                name: (post.user?.fullname ?? post.user?.username) ?? "",
+                caption: post.caption
             )
             
-            Text("6h ago")
+            Text("\(post.timestamp)")
                 .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 10)
                 .padding(.top, 1)
                 .foregroundColor(.gray)
+        }
+        .redacted(reason: isLoading ? .placeholder : [])
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.isLoading = false
+            }
         }
     }
 }
@@ -73,7 +87,7 @@ struct FeedView: View {
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {        
-            FeedView()
+            FeedView(post: .MOCK_POSTS[0])
         }
     }
 }
