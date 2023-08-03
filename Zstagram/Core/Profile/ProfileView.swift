@@ -106,6 +106,18 @@ struct ProfileView: View {
                     }
                 }
             }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    
+                } label: {
+                    Image(
+                        systemName: isFromSearchView ?
+                        "person.text.rectangle" : "line.3.horizontal"
+                    )
+                        .foregroundColor(.black)
+                }
+                
+            }
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
@@ -120,7 +132,7 @@ struct ProfileView_Previews: PreviewProvider {
         NavigationStack {
             ProfileView(
                 user: User.MOCK_USERS[0],
-                isFromSearchView: false
+                isFromSearchView: true
             )
         }
     }
