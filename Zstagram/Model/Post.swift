@@ -87,8 +87,8 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "I love this car",
-            likes: 123,
-            imageUrl: "car1",
+            likes: 12883,
+            imageUrl: "car01",
             timestamp: Date(),
             user: User.MOCK_USERS[1]
         ),
@@ -105,8 +105,8 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "Building the next-generation E-commerce mobile solution For Watches.",
-            likes: 123,
-            imageUrl: "Cardial",
+            likes: 1231,
+            imageUrl: "cardial",
             timestamp: Date(),
             user: User.MOCK_USERS[0]
         ),
@@ -142,7 +142,7 @@ extension Post {
             ownerUid: NSUUID().uuidString,
             caption: "I am in a love with See",
             likes: 23,
-            imageUrl: "see",
+            imageUrl: "sea",
             timestamp: Date(),
             user: User.MOCK_USERS[0]
         ),

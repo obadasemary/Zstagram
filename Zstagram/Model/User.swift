@@ -22,7 +22,7 @@ extension User {
         User(
             id: NSUUID().uuidString,
             username: "Obada",
-            profileImageUrl: "Obada",
+            profileImageUrl: "obada",
             fullname: "Abdelrahman Mohamed",
             bio: "Senior iOS Developer | FinTech | E-Commerce Mobile Solutions",
             eamil: "obada.semary@gmail.com"
