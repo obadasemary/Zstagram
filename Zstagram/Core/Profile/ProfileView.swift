@@ -107,6 +107,11 @@ struct ProfileView: View {
                 }
             }
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                self.isLoading = false
+            }
+        }
     }
 }
 
