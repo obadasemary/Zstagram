@@ -12,6 +12,7 @@ struct ProfileView: View {
     @Environment(\.dismiss) var dismiss
     let user: User
     @State var isFromSearchView: Bool
+    @State var isLoading: Bool = true
     
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
