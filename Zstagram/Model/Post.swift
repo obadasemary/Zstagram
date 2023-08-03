@@ -41,8 +41,8 @@ extension Post {
         Post(
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
-            caption: "Sony Stadio",
-            likes: 123,
+            caption: "Sony Stadio HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎",
+            likes: 1223,
             imageUrl: "sonyStudio",
             timestamp: Date(),
             user: User.MOCK_USERS[0]
@@ -51,7 +51,7 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "What a wanderfull snow ❆🏂",
-            likes: 123,
+            likes: 153,
             imageUrl: "snow1",
             timestamp: Date(),
             user: User.MOCK_USERS[1]
@@ -69,7 +69,7 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "Thor",
-            likes: 123,
+            likes: 173,
             imageUrl: "thor",
             timestamp: Date(),
             user: User.MOCK_USERS[3]
@@ -78,7 +78,7 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "Wooow Amazing Bridge",
-            likes: 123,
+            likes: 63,
             imageUrl: "wooow",
             timestamp: Date(),
             user: User.MOCK_USERS[2]
@@ -96,7 +96,7 @@ extension Post {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             caption: "My car better than Batman's Car",
-            likes: 123,
+            likes: 120053,
             imageUrl: "car00",
             timestamp: Date(),
             user: User.MOCK_USERS[0]
