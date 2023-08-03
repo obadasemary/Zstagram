@@ -14,84 +14,17 @@ struct ProfileView: View {
     @State var isFromSearchView: Bool
     @State var isLoading: Bool = true
     
-    private let gridItems: [GridItem] = [
-        .init(.flexible(), spacing: 1),
-        .init(.flexible(), spacing: 1),
-        .init(.flexible(), spacing: 1)
-    ]
+    var posts: [Post] {
+        return Post.MOCK_POSTS.filter({ $0.user?.username == user.username })
+    }
     
     var body: some View {
         ScrollView {
-            VStack {
-                HStack {
-                    Image(user.profileImageUrl ?? "awsAI")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 80, height: 80)
-                        .clipShape(Circle())
-                        .redacted(reason: isLoading ? .placeholder : [])
-                    
-                    Spacer()
-                    
-                    HStack(spacing: 8) {
-                        UserStateView(value: 3, title: "Posts")
-                        UserStateView(value: 12, title: "Followers")
-                        UserStateView(value: 24, title: "Following")
-                    }
-                    .redacted(reason: isLoading ? .placeholder : [])
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.bottom, 4)
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    if let fullname = user.fullname {
-                        Text(fullname)
-                            .fontWeight(.semibold)
-                            .redacted(reason: isLoading ? .placeholder : [])
-                    }
-                    
-                    if let bio = user.bio {
-                        Text(bio)
-                            .redacted(reason: isLoading ? .placeholder : [])
-                    }
-                }
-                .font(.footnote)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
-                
-                Button {
-                    
-                } label: {
-                    Text("Edit Profile")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .frame(
-                            width: 360,
-                            height: 32
-                        )
-                        .foregroundColor(.black)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 6)
-                                .stroke(.gray, lineWidth: 1)
-                        )
-                        .redacted(reason: isLoading ? .placeholder : [])
-                }
-                .redacted(reason: isLoading ? .placeholder : [])
-                
-                Divider()
-            }
+            ProfileHeaderView(user: user, postsCount: posts.count)
             
-            LazyVGrid(columns: gridItems, spacing: 1) {
-                ForEach(0 ... 12, id: \.self) { item in
-                    Image("Obada")
-                        .resizable()
-                        .scaledToFill()
-                        .redacted(reason: isLoading ? .placeholder : [])
-                }
-            }
+            PostGridView(posts: posts)
         }
+        .redacted(reason: isLoading ? .placeholder : [])
         .navigationTitle(user.username)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -120,7 +53,7 @@ struct ProfileView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.isLoading = false
             }
         }
@@ -132,7 +65,7 @@ struct ProfileView_Previews: PreviewProvider {
         NavigationStack {
             ProfileView(
                 user: User.MOCK_USERS[0],
-                isFromSearchView: true
+                isFromSearchView: false
             )
         }
     }
