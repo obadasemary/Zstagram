@@ -29,6 +29,7 @@ struct ProfileView: View {
                         .scaledToFill()
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
+                        .redacted(reason: isLoading ? .placeholder : [])
                     
                     Spacer()
                     
@@ -37,6 +38,7 @@ struct ProfileView: View {
                         UserStateView(value: 12, title: "Followers")
                         UserStateView(value: 24, title: "Following")
                     }
+                    .redacted(reason: isLoading ? .placeholder : [])
                     
                     Spacer()
                 }
@@ -47,10 +49,12 @@ struct ProfileView: View {
                     if let fullname = user.fullname {
                         Text(fullname)
                             .fontWeight(.semibold)
+                            .redacted(reason: isLoading ? .placeholder : [])
                     }
                     
                     if let bio = user.bio {
                         Text(bio)
+                            .redacted(reason: isLoading ? .placeholder : [])
                     }
                 }
                 .font(.footnote)
@@ -72,16 +76,19 @@ struct ProfileView: View {
                             RoundedRectangle(cornerRadius: 6)
                                 .stroke(.gray, lineWidth: 1)
                         )
+                        .redacted(reason: isLoading ? .placeholder : [])
                 }
+                .redacted(reason: isLoading ? .placeholder : [])
                 
                 Divider()
             }
             
             LazyVGrid(columns: gridItems, spacing: 1) {
-                ForEach(0 ... 109, id: \.self) { item in
+                ForEach(0 ... 12, id: \.self) { item in
                     Image("Obada")
                         .resizable()
                         .scaledToFill()
+                        .redacted(reason: isLoading ? .placeholder : [])
                 }
             }
         }
