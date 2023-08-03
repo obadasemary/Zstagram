@@ -26,7 +26,6 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "heart")
                 }
-//            CurrentUserProfileView()
             NavigationStack {
                 ProfileView(
                     user: User.MOCK_USERS[0],
