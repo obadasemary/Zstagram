@@ -10,7 +10,7 @@ import SwiftUI
 struct FeedView: View {
     
     let post: Post
-    @State var isLoading: Bool = true
+    @State private var isLoading: Bool = true
     
     var body: some View {
         VStack {
