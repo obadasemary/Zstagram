@@ -11,7 +11,6 @@ import SwiftUI
 struct UploadPostView: View {
     
     @State private var isLoading: Bool = true
-    private let imageDimension: CGFloat = (UIScreen.main.bounds.width / 3) - 1
     @State private var caption = ""
     @State private var imagePickerPresented = false
     @StateObject var viewModel = UploadPostViewModel()
@@ -25,14 +24,20 @@ struct UploadPostView: View {
                         image
                             .resizable()
                             .scaledToFill()
-                            .frame(width: imageDimension, height: imageDimension)
+                            .frame(
+                                width: CGFloat.imageDimension(),
+                                height: CGFloat.imageDimension()
+                            )
                             .clipped()
                             .cornerRadius(8)
                     } else {
                         Image("instagram-logo")
                             .resizable()
                             .scaledToFill()
-                            .frame(width: imageDimension, height: imageDimension)
+                            .frame(
+                                width: CGFloat.imageDimension(),
+                                height: CGFloat.imageDimension()
+                            )
                             .clipped()
                             .redacted(reason: isLoading ? .placeholder : [])
                             .cornerRadius(8)
