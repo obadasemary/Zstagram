@@ -15,8 +15,6 @@ struct PostGridView: View {
         .init(.flexible(), spacing: 1)
     ]
     
-    private let imageDimension: CGFloat = (UIScreen.main.bounds.width / 3) - 1
-    
     var posts: [Post]
     
     var body: some View {
@@ -25,7 +23,10 @@ struct PostGridView: View {
                 Image(post.imageUrl)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: imageDimension, height: imageDimension)
+                    .frame(
+                        width: CGFloat.imageDimension(),
+                        height: CGFloat.imageDimension()
+                    )
                     .clipped()
             }
         }
