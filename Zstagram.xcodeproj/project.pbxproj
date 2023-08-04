@@ -22,6 +22,7 @@
 		AF6848BB2A7321D700C5292E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6848BA2A7321D700C5292E /* SearchView.swift */; };
 		AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6848BC2A742EC400C5292E /* UserImageWithNameView.swift */; };
 		AFABE1DB2A78A70A00ADD4DD /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFABE1DA2A78A70900ADD4DD /* CurrentUserProfileView.swift */; };
+		AFB2790A2A7CAEDE0091C4B1 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB279092A7CAEDE0091C4B1 /* CGFloat+Extensions.swift */; };
 		AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */; };
 		AFCDCC112A707D9400E23F0B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC102A707D9400E23F0B /* ProfileView.swift */; };
 		AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCDCC152A70856C00E23F0B /* UserStateView.swift */; };
@@ -51,6 +52,7 @@
 		AF6848BA2A7321D700C5292E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AF6848BC2A742EC400C5292E /* UserImageWithNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageWithNameView.swift; sourceTree = "<group>"; };
 		AFABE1DA2A78A70900ADD4DD /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		AFB279092A7CAEDE0091C4B1 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		AFCDCC0E2A707AA900E23F0B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		AFCDCC102A707D9400E23F0B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AFCDCC152A70856C00E23F0B /* UserStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		AFFFF1282A70058C0090E868 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AFB279092A7CAEDE0091C4B1 /* CGFloat+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */,
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */,
+				AFB2790A2A7CAEDE0091C4B1 /* CGFloat+Extensions.swift in Sources */,
 				AF61DE142A78584800ABA2E4 /* CreatePasswordView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
 				AF61DE122A78550B00ABA2E4 /* CreateUsernameView.swift in Sources */,
