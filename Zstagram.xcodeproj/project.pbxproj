@@ -28,6 +28,7 @@
 		AFE6356F2A7C140500909317 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE6356E2A7C140500909317 /* PostGridView.swift */; };
 		AFE635712A7C1A1000909317 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */; };
 		AFE635732A7C1F7C00909317 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635722A7C1F7C00909317 /* UploadPostView.swift */; };
+		AFE635752A7C9B9900909317 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635742A7C9B9900909317 /* UploadPostViewModel.swift */; };
 		AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1142A70034D0090E868 /* ZstagramApp.swift */; };
 		AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF1162A70034D0090E868 /* ContentView.swift */; };
 		AFFFF1192A70034F0090E868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF1182A70034F0090E868 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		AFE6356E2A7C140500909317 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		AFE635722A7C1F7C00909317 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		AFE635742A7C9B9900909317 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		AFFFF1112A70034D0090E868 /* Zstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFF1142A70034D0090E868 /* ZstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZstagramApp.swift; sourceTree = "<group>"; };
 		AFFFF1162A70034D0090E868 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				AFE635722A7C1F7C00909317 /* UploadPostView.swift */,
+				AFE635742A7C9B9900909317 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				AF61DE122A78550B00ABA2E4 /* CreateUsernameView.swift in Sources */,
 				AFABE1DB2A78A70A00ADD4DD /* CurrentUserProfileView.swift in Sources */,
 				AF61DE102A7850AB00ABA2E4 /* IGTextFieldModifier.swift in Sources */,
+				AFE635752A7C9B9900909317 /* UploadPostViewModel.swift in Sources */,
 				AFE6356F2A7C140500909317 /* PostGridView.swift in Sources */,
 				AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */,
 				AFE635712A7C1A1000909317 /* ProfileHeaderView.swift in Sources */,
