@@ -12,7 +12,7 @@ struct ProfileView: View {
     @Environment(\.dismiss) var dismiss
     let user: User
     @State var isFromSearchView: Bool
-    @State var isLoading: Bool = true
+    @State private var isLoading: Bool = true
     
     var posts: [Post] {
         return Post.MOCK_POSTS.filter({ $0.user?.username == user.username })
