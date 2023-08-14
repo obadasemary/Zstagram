@@ -17,10 +17,12 @@ class LoginViewModel: ObservableObject {
     
     func signIn() async throws {
         isLoading = true
+        
         try await AuthService.shared.login(
             withEmail: email,
             password: password
         )
+        
         isLoading = false
     }
 }
