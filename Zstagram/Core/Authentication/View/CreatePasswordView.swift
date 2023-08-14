@@ -63,5 +63,6 @@ struct CreatePasswordView: View {
 struct CreatePasswordView_Previews: PreviewProvider {
     static var previews: some View {
         CreatePasswordView()
+            .environmentObject(RegistrationViewModel())
     }
 }
