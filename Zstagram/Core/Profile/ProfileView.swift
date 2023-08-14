@@ -41,7 +41,7 @@ struct ProfileView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    
+                    AuthService.shared.signout()
                 } label: {
                     Image(
                         systemName: isFromSearchView ?
