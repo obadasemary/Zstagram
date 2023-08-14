@@ -4,8 +4,10 @@
 <dict>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>launch-screen-color</string>
 		<key>UIImageName</key>
-		<string>launchImage</string>
+		<string>awsAI</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 	</dict>
