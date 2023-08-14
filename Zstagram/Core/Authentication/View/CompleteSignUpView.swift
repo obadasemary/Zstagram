@@ -63,5 +63,6 @@ struct CompleteSignUpView: View {
 struct CompleteSignUpView_Previews: PreviewProvider {
     static var previews: some View {
         CompleteSignUpView()
+            .environmentObject(RegistrationViewModel())
     }
 }
