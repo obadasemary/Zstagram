@@ -25,4 +25,12 @@ class LoginViewModel: ObservableObject {
         
         isLoading = false
     }
+    
+    func signOut() {
+        isLoading = true
+        
+        AuthService.shared.signout()
+        
+        isLoading = false
+    }
 }
