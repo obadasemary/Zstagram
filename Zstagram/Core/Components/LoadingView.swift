@@ -9,7 +9,15 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .frame(width: 150, height: 150)
+                .foregroundColor(.white)
+                .cornerRadius(20)
+                .shadow(radius: 20)
+            ProgressView("Loading")
+                .tint(.black)
+        }
     }
 }
 
