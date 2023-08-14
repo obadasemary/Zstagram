@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AddEmailView: View {
     
-    @State private var email: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         ScrollView {
@@ -26,7 +26,7 @@ struct AddEmailView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
-                TextField("Enter your email", text: $email)
+                TextField("Enter your email", text: $viewModel.email)
                     .autocorrectionDisabled()
                     .modifier(IGTextFieldModifier())
                     .padding(.top)
