@@ -36,6 +36,7 @@
 		AFD183B72A8A5E8900A08ED7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183B62A8A5E8900A08ED7 /* ContentViewModel.swift */; };
 		AFD183BA2A8A670400A08ED7 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183B92A8A670400A08ED7 /* RegistrationViewModel.swift */; };
 		AFD183BC2A8A82C300A08ED7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183BB2A8A82C300A08ED7 /* LoginViewModel.swift */; };
+		AFD183BE2A8A9FC500A08ED7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */; };
 		AFE6356F2A7C140500909317 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE6356E2A7C140500909317 /* PostGridView.swift */; };
 		AFE635712A7C1A1000909317 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */; };
 		AFE635732A7C1F7C00909317 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635722A7C1F7C00909317 /* UploadPostView.swift */; };
@@ -71,6 +72,7 @@
 		AFD183B62A8A5E8900A08ED7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		AFD183B92A8A670400A08ED7 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AFD183BB2A8A82C300A08ED7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AFE6356E2A7C140500909317 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		AFE635722A7C1F7C00909317 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				AF6848BC2A742EC400C5292E /* UserImageWithNameView.swift */,
 				AF61DE0F2A7850AB00ABA2E4 /* IGTextFieldModifier.swift */,
 				AFE6356E2A7C140500909317 /* PostGridView.swift */,
+				AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				AFE635732A7C1F7C00909317 /* UploadPostView.swift in Sources */,
 				AFD183BC2A8A82C300A08ED7 /* LoginViewModel.swift in Sources */,
 				AFD183B32A8A5A9B00A08ED7 /* AuthService.swift in Sources */,
+				AFD183BE2A8A9FC500A08ED7 /* LoadingView.swift in Sources */,
 				AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */,
 				AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */,
 				AF1DA2182A785EDF0025CED8 /* User.swift in Sources */,
