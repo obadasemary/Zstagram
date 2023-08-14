@@ -14,45 +14,59 @@ struct CompleteSignUpView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 12) {
-                
-                Spacer(minLength: UIScreen.main.bounds.height / 4)
-                
-                Text("Welcome to Instagram, \(viewModel.username)")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .padding(.top)
-                    .padding(.horizontal)
-                    .multilineTextAlignment(.center)
-                
-                Text("Click blow to complete registration and start using Zstagram.")
-                    .font(.footnote)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 24)
-                
-                Button {
-                    Task {
-                        try await viewModel.createUser()
-                    }
-                } label: {
-                    Text("Complete Sign Up")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 360, height: 44)
-                        .background(Color(.systemBlue))
-                        .cornerRadius(8)
-                }
-                .padding(.vertical)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+            ZStack(alignment: .bottom) {
+                VStack(spacing: 12) {
+                    
+                    Spacer(minLength: UIScreen.main.bounds.height / 4)
+                    
+                    Text("Welcome to Instagram, \(viewModel.username)")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.top)
+                        .padding(.horizontal)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("Click blow to complete registration and start using Zstagram.")
+                        .font(.footnote)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 24)
+                    
                     Button {
-                        dismiss()
+                        Task {
+                            try await viewModel.createUser()
+                        }
                     } label: {
-                        Image(systemName: "chevron.left")
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
+                        Text("Complete Sign Up")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .frame(width: 360, height: 44)
+                            .background(Color(.systemBlue))
+                            .cornerRadius(8)
+                    }
+                    .padding(.vertical)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "chevron.left")
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+                
+                if viewModel.isLoading {
+                    ZStack {
+                        Rectangle()
+                            .frame(width: 150, height: 150)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                            .shadow(radius: 8)
+                        ProgressView("Loading")
+                            .tint(.black)
                     }
                 }
             }
