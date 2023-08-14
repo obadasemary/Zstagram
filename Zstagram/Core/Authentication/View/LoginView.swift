@@ -44,20 +44,34 @@ struct LoginView: View {
                     }
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     
-                    Button {
-                        Task {
-                            try await viewModel.signIn()
+                    ZStack {
+                        Button {
+                            Task {
+                                try await viewModel.signIn()
+                            }
+                        } label: {
+                            Text("Login")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .frame(width: 360, height: 44)
+                                .background(Color(.systemBlue))
+                                .cornerRadius(8)
                         }
-                    } label: {
-                        Text("Login")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .frame(width: 360, height: 44)
-                            .background(Color(.systemBlue))
-                            .cornerRadius(8)
+                        .padding(.vertical)
+                        
+                        if viewModel.isLoading {
+                            ZStack {
+                                Rectangle()
+                                    .frame(width: 150, height: 150)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
+                                    .shadow(radius: 8)
+                                ProgressView("Loading")
+                                    .tint(.black)
+                            }
+                        }
                     }
-                    .padding(.vertical)
                     
                     HStack {
                         Rectangle()
