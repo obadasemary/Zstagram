@@ -63,5 +63,6 @@ struct AddEmailView: View {
 struct AddEmailView_Previews: PreviewProvider {
     static var previews: some View {
         AddEmailView()
+            .environmentObject(RegistrationViewModel())
     }
 }
