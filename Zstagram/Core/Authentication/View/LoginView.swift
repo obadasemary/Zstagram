@@ -61,15 +61,7 @@ struct LoginView: View {
                         .padding(.vertical)
                         
                         if viewModel.isLoading {
-                            ZStack {
-                                Rectangle()
-                                    .frame(width: 150, height: 150)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(8)
-                                    .shadow(radius: 8)
-                                ProgressView("Loading")
-                                    .tint(.black)
-                            }
+                            LoadingView()
                         }
                     }
                     
