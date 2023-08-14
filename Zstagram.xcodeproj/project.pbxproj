@@ -103,6 +103,42 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		AFD183B02A8A5A7100A08ED7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF29E2D02A75250C001B00C3 /* LoginView.swift */,
+				AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */,
+				AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */,
+				AF61DE132A78584800ABA2E4 /* CreatePasswordView.swift */,
+				AF1DA2152A785B310025CED8 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFD183B12A8A5A7A00A08ED7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AFD183B22A8A5A9B00A08ED7 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AFD183B42A8A5E6100A08ED7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF1162A70034D0090E868 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFD183B52A8A5E6600A08ED7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD183B62A8A5E8900A08ED7 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AFFFF1082A70034D0090E868 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +163,6 @@
 				AFFFF1282A70058C0090E868 /* Extensions */,
 				AFFFF1292A7005950090E868 /* Model */,
 				AFFFF12A2A7005990090E868 /* Services */,
-				AFFFF1162A70034D0090E868 /* ContentView.swift */,
 				AF4718822A7FDFB8000288F9 /* GoogleService-Info.plist */,
 				AFFFF1182A70034F0090E868 /* Assets.xcassets */,
 				AFFFF11A2A70034F0090E868 /* Preview Content */,
@@ -156,8 +191,8 @@
 			children = (
 				AFFFF12B2A7008060090E868 /* Authentication */,
 				AFCDCC122A70850E00E23F0B /* Components */,
-				AFFFF1302A7008940090E868 /* TabBar */,
 				AFFFF12E2A70081F0090E868 /* Root */,
+				AFFFF1302A7008940090E868 /* TabBar */,
 				AFFFF12C2A7008150090E868 /* Feed */,
 				AFFFF12F2A7008230090E868 /* Search */,
 				AFFFF1312A70089B0090E868 /* UploadPost */,
@@ -193,11 +228,8 @@
 		AFFFF12B2A7008060090E868 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				AF29E2D02A75250C001B00C3 /* LoginView.swift */,
-				AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */,
-				AF61DE112A78550B00ABA2E4 /* CreateUsernameView.swift */,
-				AF61DE132A78584800ABA2E4 /* CreatePasswordView.swift */,
-				AF1DA2152A785B310025CED8 /* CompleteSignUpView.swift */,
+				AFD183B12A8A5A7A00A08ED7 /* Service */,
+				AFD183B02A8A5A7100A08ED7 /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -224,6 +256,8 @@
 		AFFFF12E2A70081F0090E868 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				AFD183B42A8A5E6100A08ED7 /* View */,
+				AFD183B52A8A5E6600A08ED7 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
