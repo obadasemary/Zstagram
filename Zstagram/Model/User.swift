@@ -14,7 +14,7 @@ struct User: Identifiable, Hashable, Codable {
     var profileImageUrl: String?
     var fullname: String?
     var bio: String?
-    let eamil: String
+    let email: String
 }
 
 extension User {
@@ -25,7 +25,7 @@ extension User {
             profileImageUrl: "obada",
             fullname: "Abdelrahman Mohamed",
             bio: "Senior iOS Developer | FinTech | E-Commerce Mobile Solutions",
-            eamil: "obada.semary@gmail.com"
+            email: "obada.semary@gmail.com"
         ),
         User(
             id: NSUUID().uuidString,
@@ -33,7 +33,7 @@ extension User {
             profileImageUrl: "batman",
             fullname: "Bruce Wayne",
             bio: "Gotham's Dark Knight",
-            eamil: "batman@gmail.com"
+            email: "batman@gmail.com"
         ),
         User(
             id: NSUUID().uuidString,
@@ -41,7 +41,7 @@ extension User {
             profileImageUrl: "spiderman",
             fullname: "Peter Parker",
             bio: "Spiderman",
-            eamil: "spiderman@gmail.com"
+            email: "spiderman@gmail.com"
         ),
         User(
             id: NSUUID().uuidString,
@@ -49,7 +49,7 @@ extension User {
             profileImageUrl: nil,
             fullname: nil,
             bio: "Thor",
-            eamil: "thor@gmail.com"
+            email: "thor@gmail.com"
         ),
         User(
             id: NSUUID().uuidString,
@@ -57,7 +57,7 @@ extension User {
             profileImageUrl: "ironman",
             fullname: "Tony Stark",
             bio: "Ironman",
-            eamil: "ironman@gmail.com"
+            email: "ironman@gmail.com"
         )
     ]
 }
