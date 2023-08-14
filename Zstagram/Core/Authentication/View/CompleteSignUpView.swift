@@ -10,6 +10,7 @@ import SwiftUI
 struct CompleteSignUpView: View {
     
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     var body: some View {
         ScrollView {
@@ -17,7 +18,7 @@ struct CompleteSignUpView: View {
                 
                 Spacer(minLength: UIScreen.main.bounds.height / 4)
                 
-                Text("Welcome to Instagram, Obadasemary")
+                Text("Welcome to Instagram, \(viewModel.username)")
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.top)
