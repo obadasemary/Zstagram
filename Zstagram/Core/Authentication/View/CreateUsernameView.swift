@@ -63,5 +63,6 @@ struct CreateUsernameView: View {
 struct CreateUsernameView_Previews: PreviewProvider {
     static var previews: some View {
         CreateUsernameView()
+            .environmentObject(RegistrationViewModel())
     }
 }
