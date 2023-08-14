@@ -36,6 +36,8 @@
 		AFD183BA2A8A670400A08ED7 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183B92A8A670400A08ED7 /* RegistrationViewModel.swift */; };
 		AFD183BC2A8A82C300A08ED7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183BB2A8A82C300A08ED7 /* LoginViewModel.swift */; };
 		AFD183BE2A8A9FC500A08ED7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */; };
+		AFD681382A8ACE61006C4C93 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD681372A8ACE61006C4C93 /* UserService.swift */; };
+		AFD6813C2A8AD471006C4C93 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6813B2A8AD471006C4C93 /* SearchViewModel.swift */; };
 		AFE6356F2A7C140500909317 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE6356E2A7C140500909317 /* PostGridView.swift */; };
 		AFE635712A7C1A1000909317 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */; };
 		AFE635732A7C1F7C00909317 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE635722A7C1F7C00909317 /* UploadPostView.swift */; };
@@ -72,6 +74,8 @@
 		AFD183BB2A8A82C300A08ED7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AFD681362A8AAA70006C4C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AFD681372A8ACE61006C4C93 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AFD6813B2A8AD471006C4C93 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		AFE6356E2A7C140500909317 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		AFE635702A7C1A1000909317 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		AFE635722A7C1F7C00909317 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,22 @@
 			children = (
 				AFD183B92A8A670400A08ED7 /* RegistrationViewModel.swift */,
 				AFD183BB2A8A82C300A08ED7 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AFD681392A8AD453006C4C93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6848BA2A7321D700C5292E /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFD6813A2A8AD457006C4C93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD6813B2A8AD471006C4C93 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +261,7 @@
 		AFFFF12A2A7005990090E868 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AFD681372A8ACE61006C4C93 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -285,7 +306,8 @@
 		AFFFF12F2A7008230090E868 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				AF6848BA2A7321D700C5292E /* SearchView.swift */,
+				AFD681392A8AD453006C4C93 /* View */,
+				AFD6813A2A8AD457006C4C93 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -412,8 +434,10 @@
 				AFD183B32A8A5A9B00A08ED7 /* AuthService.swift in Sources */,
 				AFD183BE2A8A9FC500A08ED7 /* LoadingView.swift in Sources */,
 				AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */,
+				AFD6813C2A8AD471006C4C93 /* SearchViewModel.swift in Sources */,
 				AF6848BD2A742EC400C5292E /* UserImageWithNameView.swift in Sources */,
 				AF1DA2182A785EDF0025CED8 /* User.swift in Sources */,
+				AFD681382A8ACE61006C4C93 /* UserService.swift in Sources */,
 				AF5851EB2A71635E0011C875 /* FeedView.swift in Sources */,
 				AF1DA2162A785B310025CED8 /* CompleteSignUpView.swift in Sources */,
 				AFCDCC0F2A707AA900E23F0B /* MainTabView.swift in Sources */,
