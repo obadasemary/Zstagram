@@ -31,7 +31,9 @@ struct CompleteSignUpView: View {
                     .padding(.horizontal, 24)
                 
                 Button {
-                    print("Complete Sign Up")
+                    Task {
+                        try await viewModel.createUser()
+                    }
                 } label: {
                     Text("Complete Sign Up")
                         .font(.subheadline)
