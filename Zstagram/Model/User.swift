@@ -28,7 +28,7 @@ extension User {
         User(
             id: NSUUID().uuidString,
             username: "Obada",
-            profileImageUrl: "obada",
+            profileImageUrl: "https://firebasestorage.googleapis.com:443/v0/b/zstagram.appspot.com/o/profile_images%2F5Cv4s520AAZfQ6AEybolh7WUgV72%2FEF4D1B61-F645-4F53-9C87-13D968AC58D2?alt=media&token=7e192c2f-c8de-414f-9c1e-3f001ff2f553",
             fullname: "Abdelrahman Mohamed",
             bio: "Senior iOS Developer | FinTech | E-Commerce Mobile Solutions",
             email: "obada.semary@gmail.com"
@@ -36,7 +36,7 @@ extension User {
         User(
             id: NSUUID().uuidString,
             username: "Batman",
-            profileImageUrl: "batman",
+            profileImageUrl: nil,
             fullname: "Bruce Wayne",
             bio: "Gotham's Dark Knight",
             email: "batman@gmail.com"
@@ -44,7 +44,7 @@ extension User {
         User(
             id: NSUUID().uuidString,
             username: "Spiderman",
-            profileImageUrl: "spiderman",
+            profileImageUrl: nil,
             fullname: "Peter Parker",
             bio: "Spiderman",
             email: "spiderman@gmail.com"
@@ -60,7 +60,7 @@ extension User {
         User(
             id: NSUUID().uuidString,
             username: "Ironman",
-            profileImageUrl: "ironman",
+            profileImageUrl: nil,
             fullname: "Tony Stark",
             bio: "Ironman",
             email: "ironman@gmail.com"
