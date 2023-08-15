@@ -12,6 +12,7 @@ import Firebase
 @MainActor
 class EditProfileViewModel: ObservableObject {
     
+    @Published var user: User
     @Published var selectedImage: PhotosPickerItem? {
         didSet {
             Task {
@@ -23,6 +24,10 @@ class EditProfileViewModel: ObservableObject {
     
     @Published var fullname = ""
     @Published var bio = ""
+    
+    init(user: User) {
+        self.user = user
+    }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item = item else { return }
