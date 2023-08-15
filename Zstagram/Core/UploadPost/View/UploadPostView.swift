@@ -62,10 +62,7 @@ struct UploadPostView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
-                        caption = ""
-                        viewModel.selectedImage = nil
-                        viewModel.postImage = nil
-                        tabIndex = 0
+                        clearPostDataAndReturnToFeed()
                     } label: {
                         Image(systemName: "xmark.app")
                             .resizable()
@@ -76,7 +73,10 @@ struct UploadPostView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        
+                        Task {
+                            try await viewModel.uploadPost(caption: caption)
+                            clearPostDataAndReturnToFeed()
+                        }
                     } label: {
                         Image(systemName: "paperplane")
                             .foregroundColor(.black)
@@ -95,6 +95,13 @@ struct UploadPostView: View {
             selection: $viewModel.selectedImage
         )
         .tint(.black)
+    }
+    
+    func clearPostDataAndReturnToFeed() {
+        caption = ""
+        viewModel.selectedImage = nil
+        viewModel.postImage = nil
+        tabIndex = 0
     }
 }
 
