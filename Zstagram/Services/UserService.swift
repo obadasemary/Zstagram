@@ -12,7 +12,6 @@ struct UserService {
     
     static func fetchUser(withCurrentUId currentUId: String) async throws -> User {
         let snapshot = try await Firestore.firestore().collection("users").document(currentUId).getDocument()
-        print("DEBUG: Snapshot data is \(snapshot.data() ?? [:])")
         return try snapshot.data(as: User.self)
     }
     
