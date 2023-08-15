@@ -12,19 +12,13 @@ struct ProfileView: View {
     @Environment(\.dismiss) var dismiss
     let user: User
     @State var isFromSearchView: Bool
-    @State private var isLoading: Bool = true
-    
-    var posts: [Post] {
-        return Post.MOCK_POSTS.filter({ $0.user?.username == user.username })
-    }
     
     var body: some View {
         ScrollView {
-            ProfileHeaderView(user: user, postsCount: posts.count)
+            ProfileHeaderView(user: user)
             
-            PostGridView(posts: posts)
+            PostGridView(user: user)
         }
-        .redacted(reason: isLoading ? .placeholder : [])
         .navigationTitle(user.username)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -50,11 +44,6 @@ struct ProfileView: View {
                         .foregroundColor(.black)
                 }
                 
-            }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.isLoading = false
             }
         }
     }
