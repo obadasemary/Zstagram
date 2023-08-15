@@ -11,6 +11,7 @@ struct ProfileHeaderView: View {
     
     let user: User
     var postsCount: Int
+    @State private var showEditProfile = false
     
     var body: some View {
         VStack {
@@ -50,7 +51,7 @@ struct ProfileHeaderView: View {
             
             Button {
                 if user.isCurrentUser {
-                    print("Show edit profile")
+                    showEditProfile.toggle()
                 } else {
                     print("Follow user...")
                 }
@@ -71,6 +72,9 @@ struct ProfileHeaderView: View {
             }
             
             Divider()
+        }
+        .fullScreenCover(isPresented: $showEditProfile) {
+            EditProfileView()
         }
     }
 }
