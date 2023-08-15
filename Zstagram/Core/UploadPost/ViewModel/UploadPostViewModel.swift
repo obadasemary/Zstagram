@@ -67,7 +67,10 @@ class UploadPostViewModel: ObservableObject {
             timestamp: Timestamp()
         )
         
-        guard let encodedPost = try? Firestore.Encoder().encode(post) else { return }
+        guard let encodedPost = try? Firestore.Encoder().encode(post) else {
+            isLoading = false
+            return
+        }
         try await postRef.setData(encodedPost)
         
         isLoading = false
