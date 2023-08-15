@@ -12,6 +12,7 @@
 		AF29E2D12A75250C001B00C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D02A75250C001B00C3 /* LoginView.swift */; };
 		AF29E2D32A75CD47001B00C3 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */; };
 		AF337B822A8BC55F00D0D4FC /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B812A8BC55F00D0D4FC /* EditProfileView.swift */; };
+		AF337B842A8BCAC500D0D4FC /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B832A8BCAC500D0D4FC /* EditProfileRowView.swift */; };
 		AF4718832A7FDFB8000288F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF4718822A7FDFB8000288F9 /* GoogleService-Info.plist */; };
 		AF4718862A7FE092000288F9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AF4718852A7FE092000288F9 /* FirebaseAnalytics */; };
 		AF4718882A7FE092000288F9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF4718872A7FE092000288F9 /* FirebaseAuth */; };
@@ -55,6 +56,7 @@
 		AF29E2D02A75250C001B00C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AF29E2D22A75CD47001B00C3 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		AF337B812A8BC55F00D0D4FC /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AF337B832A8BCAC500D0D4FC /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		AF4718822A7FDFB8000288F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AF61DE0F2A7850AB00ABA2E4 /* IGTextFieldModifier.swift */,
 				AFE6356E2A7C140500909317 /* PostGridView.swift */,
 				AFD183BD2A8A9FC500A08ED7 /* LoadingView.swift */,
+				AF337B832A8BCAC500D0D4FC /* EditProfileRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AFD183B72A8A5E8900A08ED7 /* ContentViewModel.swift in Sources */,
 				AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */,
+				AF337B842A8BCAC500D0D4FC /* EditProfileRowView.swift in Sources */,
 				AFB2790A2A7CAEDE0091C4B1 /* CGFloat+Extensions.swift in Sources */,
 				AF61DE142A78584800ABA2E4 /* CreatePasswordView.swift in Sources */,
 				AFFFF1152A70034D0090E868 /* ZstagramApp.swift in Sources */,
