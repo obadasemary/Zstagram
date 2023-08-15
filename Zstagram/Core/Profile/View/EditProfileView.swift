@@ -11,7 +11,11 @@ import PhotosUI
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
-    @StateObject var viewModel = EditProfileViewModel()
+    @StateObject var viewModel: EditProfileViewModel
+    
+    init(user: User) {
+        self._viewModel = StateObject(wrappedValue: EditProfileViewModel(user: user))
+    }
     
     var body: some View {
         NavigationStack {
