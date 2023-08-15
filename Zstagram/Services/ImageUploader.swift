@@ -11,10 +11,10 @@ import FirebaseStorage
 
 struct ImageUploader {
     
-    static func uploadImage(image: UIImage, uId: String) async throws -> String? {
+    static func uploadImage(image: UIImage, uId: String, isProfileImage: Bool) async throws -> String? {
         guard let imageData = image.pngData() else { return nil }
         let filename = NSUUID().uuidString
-        let ref = Storage.storage().reference(withPath: "/profile_images/\(uId)/\(filename)")
+        let ref = Storage.storage().reference(withPath: "/\(isProfileImage ? "profile_images" : "posts_images")/\(uId)/\(filename)")
         
         do {
             let _ = try await ref.putDataAsync(imageData)
