@@ -27,7 +27,7 @@ extension User {
     static var MOCK_USERS: [User] = [
         User(
             id: NSUUID().uuidString,
-            username: "Obada",
+            username: "Obadasemary",
             profileImageUrl: "https://firebasestorage.googleapis.com:443/v0/b/zstagram.appspot.com/o/profile_images%2F5Cv4s520AAZfQ6AEybolh7WUgV72%2FEF4D1B61-F645-4F53-9C87-13D968AC58D2?alt=media&token=7e192c2f-c8de-414f-9c1e-3f001ff2f553",
             fullname: "Abdelrahman Mohamed",
             bio: "Senior iOS Developer | FinTech | E-Commerce Mobile Solutions",

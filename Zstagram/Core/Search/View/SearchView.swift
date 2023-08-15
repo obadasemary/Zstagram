@@ -19,11 +19,7 @@ struct SearchView: View {
                     LazyVStack(spacing: 12) {
                         ForEach(viewModel.users) { user in
                             NavigationLink(value: user) {
-                                UserImageWithNameView(
-                                    image: user.profileImageUrl ?? "awsAI",
-                                    name: user.username,
-                                    fullName: user.fullname ?? nil
-                                )
+                                UserImageWithNameView(user: user)
                             }
                         }
                     }
