@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedView: View {
     
     let post: Post
-    @State private var isLoading: Bool = true
     
     var body: some View {
         VStack {
@@ -18,7 +18,7 @@ struct FeedView: View {
                 UserImageView(user: user)
             }
             
-            Image(post.imageUrl)
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(maxHeight: .infinity)
@@ -65,18 +65,12 @@ struct FeedView: View {
                 caption: post.caption
             )
             
-            Text("\(post.timestamp)")
+            Text("\(post.timestamp.dateValue())")
                 .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 10)
                 .padding(.top, 1)
                 .foregroundColor(.gray)
-        }
-        .redacted(reason: isLoading ? .placeholder : [])
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.isLoading = false
-            }
         }
     }
 }
