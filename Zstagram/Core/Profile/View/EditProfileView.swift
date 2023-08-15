@@ -86,7 +86,9 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        
+                        Task {
+                            try await viewModel.updateUserData()
+                        }
                     } label: {
                         Image(systemName: "paperplane")
                             .foregroundColor(.black)
@@ -99,6 +101,6 @@ struct EditProfileView: View {
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileView()
+        EditProfileView(user: User.MOCK_USERS[0])
     }
 }
