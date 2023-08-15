@@ -16,11 +16,7 @@ struct ProfileHeaderView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(user.profileImageUrl ?? "awsAI")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
+                CircularProfileImageView(user: user, size: .large)
                 
                 Spacer()
                 
