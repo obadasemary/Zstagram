@@ -36,4 +36,28 @@ class EditProfileViewModel: ObservableObject {
         guard let uiImage = UIImage(data: data) else { return }
         self.profileImage = Image(uiImage: uiImage)
     }
+    
+    func updateUserData() async throws {
+        
+        if !fullname.isEmpty && user.fullname != fullname {
+            print("DEBUG: Update fullname \(fullname)")
+            user.fullname = fullname
+        }
+        
+        if !bio.isEmpty && user.bio != bio {
+            print("DEBUG: Update bio \(bio)")
+            user.bio = bio
+        }
+        
+        let user = User(
+            id: user.id,
+            username: user.username,
+            fullname: user.fullname,
+            bio: user.bio,
+            email: user.email
+        )
+        
+        guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+        try await Firestore.firestore().collection("users").document(user.id).updateData(encodedUser)
+    }
 }
