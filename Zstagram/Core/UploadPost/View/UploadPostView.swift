@@ -19,37 +19,43 @@ struct UploadPostView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                HStack(spacing: 8) {
-                    if let image = viewModel.postImage {
-                        image
-                            .resizable()
-                            .scaledToFill()
-                            .frame(
-                                width: CGFloat.imageDimension(),
-                                height: CGFloat.imageDimension()
-                            )
-                            .clipped()
-                            .cornerRadius(8)
-                    } else {
-                        Image("instagram-logo")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(
-                                width: CGFloat.imageDimension(),
-                                height: CGFloat.imageDimension()
-                            )
-                            .clipped()
-                            .redacted(reason: isLoading ? .placeholder : [])
-                            .cornerRadius(8)
+                ZStack {
+                    HStack(spacing: 8) {
+                        if let image = viewModel.postImage {
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(
+                                    width: CGFloat.imageDimension(),
+                                    height: CGFloat.imageDimension()
+                                )
+                                .clipped()
+                                .cornerRadius(8)
+                        } else {
+                            Image("instagram-logo")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(
+                                    width: CGFloat.imageDimension(),
+                                    height: CGFloat.imageDimension()
+                                )
+                                .clipped()
+                                .redacted(reason: isLoading ? .placeholder : [])
+                                .cornerRadius(8)
+                        }
+                        
+                        TextField(
+                            "Enter your caption...",
+                            text: $caption,
+                            axis: .vertical
+                        )
                     }
+                    .padding()
                     
-                    TextField(
-                        "Enter your caption...",
-                        text: $caption,
-                        axis: .vertical
-                    )
+                    if viewModel.isLoading {
+                        LoadingView()
+                    }
                 }
-                .padding()
             }
             .navigationTitle("New Post")
             .navigationBarTitleDisplayMode(.inline)
