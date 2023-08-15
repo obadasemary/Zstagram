@@ -58,9 +58,7 @@ class AuthService {
     func loadUserData() async throws {
         self.userSession = Auth.auth().currentUser
         guard let currentUId = userSession?.uid else { return }
-        let snapshot = try await Firestore.firestore().collection("users").document(currentUId).getDocument()
-        print("DEBUG: Snapshot data is \(snapshot.data() ?? [:])")
-        self.currentUser = try? snapshot.data(as: User.self)
+        self.currentUser = try await UserService.fetchUser(withCurrentUId: currentUId)
     }
     
     func signout() {
