@@ -9,23 +9,17 @@ import SwiftUI
 
 struct UserImageWithNameView: View {
     
-    let image: String
-    let name: String
-    let fullName: String?
+    let user: User
     
     var body: some View {
         HStack {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
+            CircularProfileImageView(user: user, size: .xSmall)
             
             VStack(alignment: .leading) {
-                Text(name)
+                Text(user.username)
                     .fontWeight(.semibold)
                 
-                if let userfullname = fullName {
+                if let userfullname = user.fullname {
                     Text(userfullname)
                 }
             }
@@ -40,10 +34,6 @@ struct UserImageWithNameView: View {
 
 struct UserImageWithNameView_Previews: PreviewProvider {
     static var previews: some View {
-        UserImageWithNameView(
-            image: "obada",
-            name: "Obada",
-            fullName: "Abdelrahman Mohamed"
-        )
+        UserImageWithNameView(user: User.MOCK_USERS[0])
     }
 }
