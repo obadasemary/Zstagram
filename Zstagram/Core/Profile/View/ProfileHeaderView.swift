@@ -10,7 +10,6 @@ import SwiftUI
 struct ProfileHeaderView: View {
     
     let user: User
-    var postsCount: Int
     @State private var showEditProfile = false
     
     var body: some View {
@@ -21,7 +20,7 @@ struct ProfileHeaderView: View {
                 Spacer()
                 
                 HStack(spacing: 8) {
-                    UserStateView(value: postsCount, title: "Posts")
+                    UserStateView(value: 13, title: "Posts")
                     UserStateView(value: 12, title: "Followers")
                     UserStateView(value: 24, title: "Following")
                 }
@@ -78,10 +77,7 @@ struct ProfileHeaderView: View {
 struct ProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {        
-            ProfileHeaderView(
-                user: User.MOCK_USERS[0],
-                postsCount: 31
-            )
+            ProfileHeaderView(user: User.MOCK_USERS[0])
         }
     }
 }
