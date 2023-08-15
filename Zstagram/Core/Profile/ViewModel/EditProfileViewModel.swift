@@ -24,6 +24,7 @@ class EditProfileViewModel: ObservableObject {
     
     @Published var fullname = ""
     @Published var bio = ""
+    @Published var isLoading = false
     
     private var uiImage: UIImage?
     
@@ -43,6 +44,8 @@ class EditProfileViewModel: ObservableObject {
     }
     
     func updateUserData() async throws {
+        
+        isLoading = true
         
         if let uiImage = uiImage {
             let imageUrl = try? await ImageUploader.uploadImage(image: uiImage, uId: user.id)
@@ -71,5 +74,7 @@ class EditProfileViewModel: ObservableObject {
         
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try await Firestore.firestore().collection("users").document(user.id).updateData(encodedUser)
+        
+        isLoading = false
     }
 }
