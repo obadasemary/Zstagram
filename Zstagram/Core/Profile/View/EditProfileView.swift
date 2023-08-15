@@ -11,27 +11,37 @@ import PhotosUI
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var selectedImage: PhotosPickerItem?
-    @State private var isLoading: Bool = true
-    @State private var fullname = ""
-    @State private var bio = ""
+    @StateObject var viewModel = EditProfileViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    PhotosPicker(selection: $selectedImage) {
+                    PhotosPicker(selection: $viewModel.selectedImage) {
                         VStack {
-                            Image(systemName: "person")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(
-                                    width: CGFloat.imageDimension(),
-                                    height: CGFloat.imageDimension()
-                                )
-                                .foregroundColor(.white)
-                                .background(.gray)
-                                .clipShape(Circle())
+                            if let image = viewModel.profileImage {
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(
+                                        width: CGFloat.imageDimension(),
+                                        height: CGFloat.imageDimension()
+                                    )
+                                    .foregroundColor(.white)
+                                    .background(.gray)
+                                    .clipShape(Circle())
+                            } else {
+                                Image(systemName: "person")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(
+                                        width: CGFloat.imageDimension(),
+                                        height: CGFloat.imageDimension()
+                                    )
+                                    .foregroundColor(.white)
+                                    .background(.gray)
+                                    .clipShape(Circle())
+                            }
                             
                             Text("Edit profile picture")
                                 .font(.footnote)
@@ -47,13 +57,13 @@ struct EditProfileView: View {
                         EditProfileRowView(
                             title: "Name",
                             placeholder: "Enter your name...",
-                            text: $fullname
+                            text: $viewModel.fullname
                         )
                         
                         EditProfileRowView(
                             title: "Bio",
                             placeholder: "Enter you bio...",
-                            text: $bio
+                            text: $viewModel.bio
                         )
                     }
                 }
