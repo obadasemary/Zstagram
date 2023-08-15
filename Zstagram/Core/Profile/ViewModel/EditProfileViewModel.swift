@@ -49,17 +49,14 @@ class EditProfileViewModel: ObservableObject {
         
         if let uiImage = uiImage {
             let imageUrl = try? await ImageUploader.uploadImage(image: uiImage, uId: user.id, isProfileImage: true)
-            print("DEBUG: Update imageUrl \(imageUrl ?? "")")
             user.profileImageUrl = imageUrl
         }
         
         if !fullname.isEmpty && user.fullname != fullname {
-            print("DEBUG: Update fullname \(fullname)")
             user.fullname = fullname
         }
         
         if !bio.isEmpty && user.bio != bio {
-            print("DEBUG: Update bio \(bio)")
             user.bio = bio
         }
         
