@@ -15,6 +15,7 @@ struct PostGridView: View {
         .init(.flexible(), spacing: 1)
     ]
     
+    let user: User
     var posts: [Post]
     
     var body: some View {
@@ -36,7 +37,7 @@ struct PostGridView: View {
 struct PostGridView_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {
-            PostGridView(posts: Post.MOCK_POSTS)
+            PostGridView(user: User.MOCK_USERS[0], posts: Post.MOCK_POSTS)
         }
     }
 }
