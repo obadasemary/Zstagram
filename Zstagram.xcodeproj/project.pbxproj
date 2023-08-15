@@ -14,6 +14,7 @@
 		AF337B822A8BC55F00D0D4FC /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B812A8BC55F00D0D4FC /* EditProfileView.swift */; };
 		AF337B842A8BCAC500D0D4FC /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B832A8BCAC500D0D4FC /* EditProfileRowView.swift */; };
 		AF337B882A8BCFC600D0D4FC /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B872A8BCFC600D0D4FC /* EditProfileViewModel.swift */; };
+		AF337B8A2A8BDEBA00D0D4FC /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF337B892A8BDEBA00D0D4FC /* ImageUploader.swift */; };
 		AF4718832A7FDFB8000288F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF4718822A7FDFB8000288F9 /* GoogleService-Info.plist */; };
 		AF4718862A7FE092000288F9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AF4718852A7FE092000288F9 /* FirebaseAnalytics */; };
 		AF4718882A7FE092000288F9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF4718872A7FE092000288F9 /* FirebaseAuth */; };
@@ -59,6 +60,7 @@
 		AF337B812A8BC55F00D0D4FC /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AF337B832A8BCAC500D0D4FC /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		AF337B872A8BCFC600D0D4FC /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		AF337B892A8BDEBA00D0D4FC /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		AF4718822A7FDFB8000288F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF5851EA2A71635E0011C875 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		AF5851EC2A7163B60011C875 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD681372A8ACE61006C4C93 /* UserService.swift */,
+				AF337B892A8BDEBA00D0D4FC /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				AFFFF1172A70034D0090E868 /* ContentView.swift in Sources */,
 				AFCDCC162A70856C00E23F0B /* UserStateView.swift in Sources */,
 				AFD183B72A8A5E8900A08ED7 /* ContentViewModel.swift in Sources */,
+				AF337B8A2A8BDEBA00D0D4FC /* ImageUploader.swift in Sources */,
 				AF599F3C2A72D8A800CC004C /* UserImageView.swift in Sources */,
 				AF337B842A8BCAC500D0D4FC /* EditProfileRowView.swift in Sources */,
 				AFB2790A2A7CAEDE0091C4B1 /* CGFloat+Extensions.swift in Sources */,
