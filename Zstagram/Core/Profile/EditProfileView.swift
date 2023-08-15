@@ -13,6 +13,8 @@ struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
     @State private var selectedImage: PhotosPickerItem?
     @State private var isLoading: Bool = true
+    @State private var fullname = ""
+    @State private var bio = ""
     
     var body: some View {
         NavigationStack {
@@ -20,16 +22,16 @@ struct EditProfileView: View {
                 VStack {
                     PhotosPicker(selection: $selectedImage) {
                         VStack {
-                            Image("instagram-logo")
+                            Image(systemName: "person")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(
                                     width: CGFloat.imageDimension(),
                                     height: CGFloat.imageDimension()
                                 )
+                                .foregroundColor(.white)
                                 .background(.gray)
                                 .clipShape(Circle())
-                                .redacted(reason: isLoading ? .placeholder : [])
                             
                             Text("Edit profile picture")
                                 .font(.footnote)
@@ -40,6 +42,20 @@ struct EditProfileView: View {
                         }
                     }
                     .padding(.vertical, 8)
+                    
+                    VStack {
+                        EditProfileRowView(
+                            title: "Name",
+                            placeholder: "Enter your name...",
+                            text: $fullname
+                        )
+                        
+                        EditProfileRowView(
+                            title: "Bio",
+                            placeholder: "Enter you bio...",
+                            text: $bio
+                        )
+                    }
                 }
             }
             .navigationTitle("Edit Profile")
