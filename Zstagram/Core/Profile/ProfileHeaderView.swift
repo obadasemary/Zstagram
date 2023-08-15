@@ -49,9 +49,14 @@ struct ProfileHeaderView: View {
             .padding(.horizontal)
             
             Button {
+                if user.isCurrentUser {
+                    print("Show edit profile")
+                } else {
+                    print("Follow user...")
+                }
                 
             } label: {
-                Text("Edit Profile")
+                Text(user.isCurrentUser ? "Edit Profile" : "Follow")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(
