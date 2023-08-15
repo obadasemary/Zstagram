@@ -14,12 +14,18 @@ struct FeedListView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVStack(spacing: 32) {
-                    ForEach(viewModel.posts) { post in
-                        FeedView(post: post)
+                ZStack {
+                    LazyVStack(spacing: 32) {
+                        ForEach(viewModel.posts) { post in
+                            FeedView(post: post)
+                        }
+                    }
+                    .padding(.top, 8)
+                    
+                    if viewModel.isLoading {
+                        LoadingView()
                     }
                 }
-                .padding(.top, 8)
             }
             .navigationTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
