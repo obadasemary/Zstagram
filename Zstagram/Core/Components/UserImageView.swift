@@ -9,18 +9,13 @@ import SwiftUI
 
 struct UserImageView: View {
     
-    let image: String
-    let name: String
+    let user: User
     
     var body: some View {
         HStack {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
+            CircularProfileImageView(user: user, size: .xSmall)
             
-            Text(name)
+            Text(user.username)
                 .font(.footnote)
                 .fontWeight(.semibold)
             
@@ -32,9 +27,6 @@ struct UserImageView: View {
 
 struct UserImageView_Previews: PreviewProvider {
     static var previews: some View {
-        UserImageView(
-            image: "obada",
-            name: "Abdelrahman Mohamed"
-        )
+        UserImageView(user: User.MOCK_USERS[0])
     }
 }
