@@ -135,6 +135,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AF337B922A8C07DC00D0D4FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFE635722A7C1F7C00909317 /* UploadPostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF337B932A8C07E100D0D4FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFE635742A7C9B9900909317 /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AFCDCC122A70850E00E23F0B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,8 +375,8 @@
 		AFFFF1312A70089B0090E868 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				AFE635722A7C1F7C00909317 /* UploadPostView.swift */,
-				AFE635742A7C9B9900909317 /* UploadPostViewModel.swift */,
+				AF337B922A8C07DC00D0D4FC /* View */,
+				AF337B932A8C07E100D0D4FC /* ViewModel */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
