@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Post: Identifiable, Hashable, Codable {
     
@@ -14,7 +15,7 @@ struct Post: Identifiable, Hashable, Codable {
     var caption: String
     var likes: Int
     var imageUrl: String
-    let timestamp: Date
+    let timestamp: Timestamp
     var user: User?
     
     init(
@@ -23,7 +24,7 @@ struct Post: Identifiable, Hashable, Codable {
         caption: String,
         likes: Int,
         imageUrl: String,
-        timestamp: Date,
+        timestamp: Timestamp,
         user: User? = nil
     ) {
         self.id = id
@@ -44,7 +45,7 @@ extension Post {
             caption: "Sony Stadio HUGE: Sony gearing up to take acquisitions, investments and joint ventures seriously as their job listings  is seek to hire a  Corporate Strategy and Development-Integration and Acceleration candidate for this purpose 🚀 What type of acquisitions/investments to grow with #PlayStation Studios do you hope to see in the future?😎",
             likes: 1223,
             imageUrl: "sonyStudio",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         Post(
@@ -53,7 +54,7 @@ extension Post {
             caption: "What a wanderfull snow ❆🏂",
             likes: 153,
             imageUrl: "snow1",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[1]
         ),
         Post(
@@ -62,7 +63,7 @@ extension Post {
             caption: "Iron Man is comming",
             likes: 123,
             imageUrl: "ironman",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[4]
         ),
         Post(
@@ -71,7 +72,7 @@ extension Post {
             caption: "Thor",
             likes: 173,
             imageUrl: "thor",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[3]
         ),
         Post(
@@ -80,7 +81,7 @@ extension Post {
             caption: "Wooow Amazing Bridge",
             likes: 63,
             imageUrl: "wooow",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[2]
         ),
         Post(
@@ -89,7 +90,7 @@ extension Post {
             caption: "I love this car",
             likes: 12883,
             imageUrl: "car01",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[1]
         ),
         Post(
@@ -98,7 +99,7 @@ extension Post {
             caption: "My car better than Batman's Car",
             likes: 120053,
             imageUrl: "car00",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         Post(
@@ -107,7 +108,7 @@ extension Post {
             caption: "Building the next-generation E-commerce mobile solution For Watches.",
             likes: 1231,
             imageUrl: "cardial",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         Post(
@@ -116,7 +117,7 @@ extension Post {
             caption: "Sony Stadio",
             likes: 1203,
             imageUrl: "sonyStudio",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[4]
         ),
         Post(
@@ -125,7 +126,7 @@ extension Post {
             caption: "I am happy to annouce that I worked in D360, In a marvelous team of 15 iOS engineers, to build the next generation FinTech mobile solution. \nWe're working based on a multi-modular architecture, enabling 7 active squads to simultaneously contribute to the code base, reducing conflicts & increasing reusability, aspiring to best-in-market user experience.",
             likes: 1413,
             imageUrl: "d360",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         Post(
@@ -134,7 +135,7 @@ extension Post {
             caption: "Batman",
             likes: 13,
             imageUrl: "batman",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[1]
         ),
         Post(
@@ -143,7 +144,7 @@ extension Post {
             caption: "I am in a love with See",
             likes: 23,
             imageUrl: "sea",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
     ]
