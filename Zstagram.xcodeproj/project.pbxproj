@@ -155,6 +155,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AF337B942A8C187C00D0D4FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF337B962A8C18A100D0D4FC /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF337B952A8C188100D0D4FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF5851EC2A7163B60011C875 /* FeedListView.swift */,
+				AF5851EA2A71635E0011C875 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AFCDCC122A70850E00E23F0B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,8 +353,8 @@
 		AFFFF12C2A7008150090E868 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				AF5851EC2A7163B60011C875 /* FeedListView.swift */,
-				AF5851EA2A71635E0011C875 /* FeedView.swift */,
+				AF337B952A8C188100D0D4FC /* View */,
+				AF337B942A8C187C00D0D4FC /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
