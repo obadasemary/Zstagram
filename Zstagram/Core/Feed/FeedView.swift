@@ -15,10 +15,7 @@ struct FeedView: View {
     var body: some View {
         VStack {
             if let user = post.user {
-                UserImageView(
-                    image: user.profileImageUrl ?? "instagram-logo",
-                    name: user.fullname ?? user.username
-                )
+                UserImageView(user: user)
             }
             
             Image(post.imageUrl)
