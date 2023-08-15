@@ -7,7 +7,7 @@
 		<key>UIColorName</key>
 		<string>launch-screen-color</string>
 		<key>UIImageName</key>
-		<string>awsAI</string>
+		<string>launch-screen-image</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 	</dict>
